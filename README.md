@@ -1,8 +1,5 @@
 # RustyLine
-[![Build Status](https://travis-ci.org/kkawakam/rustyline.svg?branch=master)](https://travis-ci.org/kkawakam/rustyline)
-[![Build status](https://ci.appveyor.com/api/projects/status/ls7sty8nt25rdfkq/branch/master?svg=true)](https://ci.appveyor.com/project/kkawakam/rustyline/branch/master)
-[![Clippy Linting Result](https://clippy.bashy.io/github/kkawakam/rustyline/master/badge.svg)](https://clippy.bashy.io/github/kkawakam/rustyline/master/log)
-[![](http://meritbadge.herokuapp.com/rustyline)](https://crates.io/crates/rustyline)
+[![Build Status](https://travis-ci.org/jblondin/rustyline.svg?branch=master)](https://travis-ci.org/jblondin/rustyline)
 
 Readline implementation in Rust that is based on [Antirez' Linenoise](https://github.com/antirez/linenoise)
 
@@ -18,6 +15,9 @@ Readline implementation in Rust that is based on [Antirez' Linenoise](https://gi
 
 **Note**: Powershell ISE is not supported, check [issue #56](https://github.com/kkawakam/rustyline/issues/56)
 
+## This fork
+This fork is just to provide a respository for a repackaging of the rustyline crate.
+
 ## Build
 This project uses Cargo and Rust stable
 ```bash
@@ -26,7 +26,7 @@ cargo build --release
 
 ## Example
 ```rust
-extern crate rustyline;
+extern crate wee_rl as rustyline;
 
 use rustyline::error::ReadlineError;
 use rustyline::Editor;
@@ -61,14 +61,14 @@ fn main() {
     rl.save_history("history.txt").unwrap();
 }
 ```
-                          
+
 ## crates.io
 You can use this package in your project by adding the following
 to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-rustyline = "1.0.0"
+wee-rl = "1.0.0"
 ```
 
 ## Features

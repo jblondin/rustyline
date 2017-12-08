@@ -1,18 +1,14 @@
 [package]
-name = "rustyline"
+name = "wee-rl"
 version = "1.0.0"
 authors = ["Katsu Kawakami <kkawa1570@gmail.com>"]
 description = "Rustyline, a readline implementation based on Antirez's Linenoise"
-documentation = "http://docs.rs/rustyline"
-repository = "https://github.com/kkawakam/rustyline"
+documentation = "http://docs.rs/wee-rl"
+repository = "https://github.com/jblondin/rustyline"
 readme = "README.md"
 keywords = ["readline"]
 license = "MIT"
 categories = ["command-line-interface"]
-
-[badges]
-travis-ci = { repository = "kkawakam/rustyline" }
-appveyor = { repository = "kkawakam/rustyline" }
 
 [dependencies]
 libc = "0.2.7"

@@ -1,5 +1,5 @@
 extern crate log;
-extern crate rustyline;
+extern crate wee_rl as rustyline;
 
 use std::io::{self, Write};
 use log::{LogRecord, LogLevel, LogLevelFilter, LogMetadata, SetLoggerError};
